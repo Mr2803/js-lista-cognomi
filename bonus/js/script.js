@@ -9,13 +9,23 @@ QUINDI OUTPUT sarà:
 */
 
 //imposto il mio array
-var cognomi = ["<li>rispoli</li>","<li>fierro</li>","<li>mancini</li>","<li>salvi</li>","<li>cinelli</li>"];
+var cognomi = ["rispoli","fierro","mancini","salvi","cinelli"];
 
-//imposto la mia var
+//imposto la mia var per il cognome utente
 var cognomeUser;
 
+//imposto una var j per il mio ciclo while
+var j=0;
+//imposto il mio ciclo while per far stampare gli elementi in pagina uno per volta
+while (j < cognomi.length){
+  document.getElementById('my_list-old').innerHTML += "<li>" + cognomi[j] + "</li>";
+
+  //imposto la mia via di uscita dal ciclo in questo caso la var i avanzerà di 1 fino a diventare >= di cognomi.length
+  j++;
+}
+
 //Stampo in pagina il mio array
-document.getElementById('my_list-old').innerHTML =  cognomi ;
+// document.getElementById('my_list-old').innerHTML =  cognomi ;
 console.log("questà è la lista attuale :" + cognomi)//debug
 
   // CHIEDI ALL'UTENTE IL COGNOME
@@ -39,7 +49,7 @@ var i =0;
 
 //imposto la condizione affinchè il ciclo si ripeta
 while (i < cognomi.length){
-  document.getElementById('my_list-new').innerHTML += cognomi[i]+ " ";
+  document.getElementById('my_list-new').innerHTML += "<li>" + cognomi[i] + "</li>";
   console.log(cognomi[i])//debug
 
   //imposto la mia via di uscita dal ciclo in questo caso la var i avanzerà di 1 fino a diventare >= di cognomi.length
