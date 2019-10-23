@@ -9,7 +9,7 @@ QUINDI OUTPUT sarà:
 */
 
 //imposto il mio array
-var cognomi = ["rispoli","fierro","mancini","salvi","cinelli"]
+var cognomi = ["<li>rispoli</li>","<li>fierro</li>","<li>mancini</li>","<li>salvi</li>","<li>cinelli</li>"];
 
 //imposto la mia var
 var cognomeUser;
