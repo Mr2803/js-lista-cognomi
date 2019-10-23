@@ -19,7 +19,7 @@ var j=0;
 //imposto il mio ciclo while per far stampare gli elementi in pagina uno per volta
 while (j < cognomi.length){
   document.getElementById('my_list-old').innerHTML += "<li>" + cognomi[j] + "</li>";
-
+  
   //imposto la mia via di uscita dal ciclo in questo caso la var i avanzerà di 1 fino a diventare >= di cognomi.length
   j++;
 }
