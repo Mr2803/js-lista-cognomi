@@ -10,17 +10,22 @@ QUINDI OUTPUT sarà:
 
 var cognomi = ["rispoli","fierro","mancini","salvi","cinelli"]
 var cognomeUser;
-
+document.getElementById('my_list-old').innerHTML =  cognomi ;
+console.log("questà è la lista attuale :" + cognomi)
 // Chiedi all’utente il cognome
 cognomeUser= prompt("inserisci un cognome")
 cognomi.push(cognomeUser);
 console.log("il cognome da te inserito è:" + cognomeUser)
+console.log("la nuova lista è :" + cognomi)
 
 //e stampa la lista ordinata alfabeticamente.
 var i =0;
 
 while (i < cognomi.length){
-  console.log(cognomi[i]);
+  document.getElementById('my_list-new').innerHTML = cognomi.sort() ;
 
   i++;
 }
+console.log("la nuova lista ordinata alfabeticamente è:" + cognomi.sort());
+document.getElementById('my_position').innerHTML = cognomi.indexOf(cognomeUser);
+console.log("la posizione del nuovo elemento nell'array è :"+ cognomi.indexOf(cognomeUser))
