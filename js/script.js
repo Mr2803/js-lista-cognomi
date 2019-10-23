@@ -19,11 +19,12 @@ console.log("il cognome da te inserito è:" + cognomeUser)
 console.log("la nuova lista è :" + cognomi)
 
 //e stampa la lista ordinata alfabeticamente.
+cognomi.sort();
 var i =0;
 
 while (i < cognomi.length){
-  document.getElementById('my_list-new').innerHTML = cognomi.sort() ;
-  console.log(cognomi.sort())
+  document.getElementById('my_list-new').innerHTML += cognomi[i]+ ",";
+  console.log(cognomi[i])
   i++;
 }
 console.log("la nuova lista ordinata alfabeticamente è:" + cognomi.sort());
