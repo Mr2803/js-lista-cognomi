@@ -7,22 +7,17 @@
 
 body{
   font-family: "Indie Flower";
-  background: rgb(25, 171, 217);
+  background: rgb(89, 199, 246);
 
 }
 
 h2{
   color:#47576B;
   font-weight: bold;
+  font-size: 15px;
 }
 
-
-.debug{
-  height:500px;
-  border : 1px black solid;
-}
-
-.post-it{
+.my_style-row{
   min-height: 300px;
   font-family: "Gloria Hallelujah";
   font-weight: bold;
@@ -31,7 +26,13 @@ h2{
   padding:30px;
 }
 
-.post-it::after{
+.debug{
+  height:500px;
+  border : 1px black solid;
+}
+
+
+.my_style-row::after{
   content: "";
   position: absolute;
   width: 110px;
