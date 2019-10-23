@@ -23,9 +23,10 @@ var i =0;
 
 while (i < cognomi.length){
   document.getElementById('my_list-new').innerHTML = cognomi.sort() ;
-
+  console.log(cognomi.sort())
   i++;
 }
 console.log("la nuova lista ordinata alfabeticamente è:" + cognomi.sort());
-document.getElementById('my_position').innerHTML = cognomi.indexOf(cognomeUser);
+document.getElementById('my_position').innerHTML = "la posizione del nuovo elemento nell'array è :" + cognomi.indexOf(cognomeUser);
 console.log("la posizione del nuovo elemento nell'array è :"+ cognomi.indexOf(cognomeUser))
+document.getElementById('my_position2').innerHTML = "la posizione per l'uomo è " + parseInt(cognomi.indexOf(cognomeUser)+1);
